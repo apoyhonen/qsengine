@@ -2,8 +2,12 @@
 # https://help.github.com/articles/dealing-with-line-endings/
 #
 
-# Set the default behavior, in case people don't have core.autocrlf set
+# DEFAULT / AUTOMATIC SETTING
+
+# Set the default behavior; automatically detects text and binary files for changes
 * text=auto
+
+# OVERRIDING SETTINGS
 
 # Java sources
 *.java          text diff=java
@@ -33,9 +37,9 @@
 *.jar           binary
 *.so            binary
 *.war           binary
-*.png binary
-*.jpg binary
+*.png 		binary
+*.jpg 		binary
 
 # Declare files that will always have CRLF line endings on checkout (Windows files)
-*.sln text eol=crlf
-*.bat text eol=crlf
+*.sln 		text eol=crlf
+*.bat 		text eol=crlf
